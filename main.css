@@ -4,6 +4,14 @@ body {
     padding: 0;
 }
 
+/* MENU */
+nav {
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    background-color: white;
+    z-index: 1;
+}
 nav .menu {
     height: 100px;
     align-items: center;
@@ -16,8 +24,7 @@ nav .menu img {
 nav .menu {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(#c1c1c1 10%, #fff);
-    }
+}
 
 nav .menu img {
     margin-left: 100px;
@@ -33,7 +40,27 @@ nav .menu li {
     display: inline-block;
     padding: 10px;
     margin: 0 10px;
+}
+/* MAIN CONTAINER */
 
+main {
+    width: 100%;
+    top: 100px;
+    position: absolute;
+}
+.container-image img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    }
+.container-background {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-image: url("img/shoes.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: solid red 5px;
 }
 
 @media only screen and (max-width: 400px) {
