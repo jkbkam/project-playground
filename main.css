@@ -3,30 +3,45 @@ body {
     margin: 0;
     padding: 0;
 }
+
 nav .menu {
     height: 100px;
     align-items: center;
-    border-bottom: grey 2px solid;
-}
+    }
+
 nav .menu img {
     height: 40px;
 }
+
 nav .menu {
     display: flex;
     justify-content: space-between;
-}
+    background: linear-gradient(#c1c1c1 10%, #fff);
+    }
+
 nav .menu img {
     margin-left: 100px;
     display: block;
 }
+
 nav .menu ul {
     margin-right: 100px;
 }
+
 nav .menu li {
     list-style-type: none;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     margin: 0 10px;
-    border: 2px solid grey;
-    border-radius: 10px;
+
+}
+
+@media only screen and (max-width: 400px) {
+    nav .menu {
+        display: inline-block;
+    }
+
+    nav .menu li {
+        display: block;
+    }
 }
